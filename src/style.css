@@ -57,10 +57,13 @@ body {
 
 .siteList {
   /* outline: 1px solid blue; */
+  width: 344px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 15px; */
 }
 .siteList > li {
   /* outline: 1px solid red; */
