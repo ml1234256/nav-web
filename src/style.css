@@ -1,0 +1,96 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*  */
+body {
+  background-color: #eee;
+}
+.globalMain {
+  /* border: 1px solid black; */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.searchForm {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.searchForm > input {
+  width: 252px;
+  height: 40px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-right: -1px;
+}
+.searchForm > button {
+  width: 80px;
+  height: 40px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  background-color: #296ed6;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.siteList {
+  /* outline: 1px solid blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.siteList > li {
+  /* outline: 1px solid red; */
+  margin: 6px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.siteList .site,
+.siteList .addButton {
+  display: block;
+  width: 160px;
+  padding: 18px 0;
+  cursor: pointer;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.siteList .logo {
+  height: 70px;
+  font-size: 64px;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.siteList .url {
+  font-size: 14px;
+  /* border: 1px solid black; */
+  text-align: center;
+  margin-top: 6px;
+}
+/* .siteList .add {
+  font-size: 98px;
+} */
