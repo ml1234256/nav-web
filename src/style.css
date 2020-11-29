@@ -16,6 +16,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+input,
+button {
+  outline: none;
+}
 
 /*  */
 body {
@@ -41,6 +45,7 @@ body {
   border: 1px solid #ddd;
   background-color: #fff;
   margin-right: -1px;
+  text-indent: 0.5em;
 }
 .searchForm > button {
   width: 80px;
