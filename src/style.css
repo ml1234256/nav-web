@@ -64,10 +64,10 @@ body {
   min-width: 344px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2px;
+  padding: 0 18px;
 }
 .siteList > li {
   /* outline: 1px solid red; */
