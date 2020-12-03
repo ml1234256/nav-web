@@ -27,7 +27,6 @@ body {
 }
 .globalMain {
   /* border: 1px solid black; */
-  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,18 +61,29 @@ body {
 
 .siteList {
   /* outline: 1px solid blue; */
-  width: 344px;
+  min-width: 344px;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 0 21px; */
+  padding: 0 21px;
+}
+@media (min-width: 500px) {
+  .siteList {
+    max-width: 920px;
+    justify-content: flex-start;
+  }
+  .siteList > li {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 }
 .siteList > li {
   /* outline: 1px solid red; */
-  margin: 6px;
   border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   position: relative;
 }
 .siteList .site,
@@ -100,9 +110,6 @@ body {
   text-align: center;
   margin: 15px 0 10px 0;
 }
-/* .siteList .add {
-  font-size: 98px;
-} */
 .siteList .delete {
   /* border: 1px solid black; */
   width: 30px;
@@ -112,5 +119,4 @@ body {
   position: absolute;
   top: 0;
   right: -2px;
-  cursor: pointer;
 }
