@@ -64,20 +64,10 @@ body {
   min-width: 344px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 21px;
-}
-@media (min-width: 500px) {
-  .siteList {
-    max-width: 920px;
-    justify-content: flex-start;
-  }
-  .siteList > li {
-    margin-left: 7px;
-    margin-right: 7px;
-  }
+  padding: 0 2px;
 }
 .siteList > li {
   /* outline: 1px solid red; */
@@ -85,6 +75,15 @@ body {
   margin-top: 6px;
   margin-bottom: 6px;
   position: relative;
+}
+@media (min-width: 500px) {
+  .siteList {
+    max-width: 920px;
+    justify-content: flex-start;
+  }
+  .siteList > li {
+    margin: 8px;
+  }
 }
 .siteList .site,
 .siteList .addButton {
